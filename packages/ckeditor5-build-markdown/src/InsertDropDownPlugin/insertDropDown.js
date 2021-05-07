@@ -8,6 +8,7 @@ import imageIcon from '@alexkrulik/ckeditor5-insertdropdown/theme/icons/user.svg
 export default class InsertDropDown extends Plugin {
 	init() {
 		const editor = this.editor;
+
 		editor.commands.add('mySimpleCommand', { // create named command
 			exec: function (edt) {
 				alert(edt.getData());
