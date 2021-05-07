@@ -3,7 +3,6 @@ import Model from '@ckeditor/ckeditor5-ui/src/model';
 import Collection from '@ckeditor/ckeditor5-utils/src/collection';
 import {addListToDropdown, createDropdown} from '@ckeditor/ckeditor5-ui/src/dropdown/utils';
 import SplitButtonView from '@ckeditor/ckeditor5-ui/src/dropdown/button/splitbuttonview';
-import imageIcon from './icon.svg';
 
 export default class InsertDropDown extends Plugin {
 	init() {
@@ -21,7 +20,6 @@ export default class InsertDropDown extends Plugin {
 			dropdownView.buttonView.actionView.set({
 				withText: true,
 				label: 'Add Placeholder',
-				icon: imageIcon,
 				tooltip: true
 			});
 
