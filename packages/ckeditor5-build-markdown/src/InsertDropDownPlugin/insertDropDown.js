@@ -3,7 +3,7 @@ import Model from '@ckeditor/ckeditor5-ui/src/model';
 import Collection from '@ckeditor/ckeditor5-utils/src/collection';
 import {addListToDropdown, createDropdown} from '@ckeditor/ckeditor5-ui/src/dropdown/utils';
 import SplitButtonView from '@ckeditor/ckeditor5-ui/src/dropdown/button/splitbuttonview';
-import imageIcon from '@alexkrulik/ckeditor5-insertdropdown/theme/icons/user.svg';
+import imageIcon from './icon.svg';
 
 export default class InsertDropDown extends Plugin {
 	init() {
