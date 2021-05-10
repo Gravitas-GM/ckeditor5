@@ -7,9 +7,9 @@ import { addListToDropdown, createDropdown } from '@ckeditor/ckeditor5-ui/src/dr
 export default class PlaceholderDropDown extends Plugin {
 	init() {
 		this.editor.ui.componentFactory.add( 'PlaceholderDropDown', locale => {
-			const dropdownView = createDropdown( locale, DropdownButtonView );
+			const view = createDropdown( locale, DropdownButtonView );
 
-			dropdownView.buttonView.set( {
+			view.buttonView.set( {
 				withText: true,
 				label: 'Placeholder',
 				tooltip: true
@@ -28,15 +28,15 @@ export default class PlaceholderDropDown extends Plugin {
 				} );
 			} );
 
-			addListToDropdown( dropdownView, items );
+			addListToDropdown( view, items );
 
-			dropdownView.on( 'execute', event => {
+			view.on( 'execute', event => {
 				this.editor.model.change( writer => {
 					this.editor.model.insertContent( writer.createText( event.source.value + ' ' ) );
 				} );
 			} );
 
-			return dropdownView;
+			return view;
 		} );
 	}
 }
