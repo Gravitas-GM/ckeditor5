@@ -30,6 +30,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import PlaceholderDropDown from './placeholderDropDown';
 
 export default class MarkdownEditor extends ClassicEditorBase {}
 
@@ -58,7 +59,8 @@ MarkdownEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	PlaceholderDropDown
 ];
 
 // Editor configuration.
@@ -81,7 +83,8 @@ MarkdownEditor.defaultConfig = {
 			'insertTable',
 			'mediaEmbed',
 			'undo',
-			'redo'
+			'redo',
+			'placeholderdropdown'
 		]
 	},
 	image: {
