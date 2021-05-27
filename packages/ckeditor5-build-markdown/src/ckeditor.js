@@ -102,21 +102,6 @@ MarkdownEditor.defaultConfig = {
 			'mergeTableCells'
 		]
 	},
-	dropdownlist: [
-		{ label: 'Account Name', value: '{{account.name}}' },
-		{ label: 'Sender Email', value: '{{template.senderEmailAddress}}' },
-		{ label: 'Sender Name', value: '{{template.senderName}}' },
-		{ label: 'Lead\'s First Name', value: '{{lead.contact.name.first}}' },
-		{ label: 'Lead\'s Last Name', value: '{{lead.contact.name.last}}' },
-		{ label: 'Lead\'s Full Name', value: '{{lead.contact.name.full}}}}' },
-		{ label: 'Lead\'s Email', value: '{{lead.contact.email.address}}' },
-		{ label: 'Lead\'s Phone Number', value: '{{lead.contact.phone.full}}' },
-		{ label: 'Appointment Date', value: '{{lead.appointment.scheduledDate}}' },
-		{ label: 'Store Name', value: '{{lead.store.name}}' },
-		{ label: 'User\'s First Name', value: '{{user.firstName}}' },
-		{ label: 'User\'s Last Name', value: '{{user.lastName}}' },
-		{ label: 'User\'s Full Name', value: '{{user.fullName}}' }
-	],
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
 };
