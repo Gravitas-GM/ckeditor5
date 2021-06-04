@@ -6,7 +6,7 @@ import { addListToDropdown, createDropdown } from '@ckeditor/ckeditor5-ui/src/dr
 
 export default class PlaceholderDropDown extends Plugin {
 	init() {
-		if ( !this.editor.config.get( 'dropdownlist' ) ) {
+		if ( !this.editor.config.get( 'templatePlaceholders' ) ) {
 			return;
 		}
 
@@ -21,7 +21,7 @@ export default class PlaceholderDropDown extends Plugin {
 
 			const items = new Collection();
 
-			this.editor.config.get( 'dropdownlist' ).forEach( item => {
+			this.editor.config.get( 'templatePlaceholders' ).forEach( item => {
 				items.add( {
 					type: 'button',
 					model: new Model( {
