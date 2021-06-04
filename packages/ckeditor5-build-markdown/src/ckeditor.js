@@ -84,7 +84,7 @@ MarkdownEditor.defaultConfig = {
 			'mediaEmbed',
 			'undo',
 			'redo',
-			'placeholderdropdown'
+			'placeholderDropdown'
 		]
 	},
 	image: {
